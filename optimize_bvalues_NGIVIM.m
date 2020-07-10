@@ -27,7 +27,7 @@ Dstar_range= [6.29 237.39]*1e-3;  %decrease to 237.39 or less (10% left)    20 o
 S0_range=[1500 2500]*(1/0.350813688); %Increase to 1500-2500, Correction factor for T2 decay.
 K_range = [0.1 2.81];  %0.5 3 %2.81
 
-sigma =100; %NL20 for paper!!! 1/15;  % specify noise level (for CRLB analysis)
+sigma =20; % specify noise level (for CRLB analysis)
 
 prims = primes(11); % all prime number uptil and including input
 ADC = HaltonSequence( nin, prims(1), .5) * (ADC_range(2)-ADC_range(1))+ADC_range(1); %HaltonSequence outputs pseudorandom numbers between 0 and 1. ADC is a scaled in the range given above.
